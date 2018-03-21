@@ -36,6 +36,10 @@ margin-top: 1%;
   margin: 1% auto;
 }
 
+.badge {
+  margin-right: 2px;
+}
+
 .navbar a {
   font-size: 0.8em;
 }
