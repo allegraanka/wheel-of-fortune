@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>wheel of fortune game</title>
+  </head>
+  <body>
+<!-- 100%-width responsive section containing header -->
+    <div class="container-fluid">
+      <header class="heading">
+        <h1> wheel of fortune </h1>
+        <p>be smart, get rich: spin the wheel!</p>
+      </header>
+    </div>
+
+<!-- make-a-move play drop-down button -->
+    <div class="btn-group">
+      <button class="btn btn-outline-light btn-lg" type="button">
+        make a move!
+      </button>
+      <button type="button" class="btn btn-lg btn-outline-light dropdown-toggle dropdown-toggle-split"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <button id="spin" class="dropdown-item" type="button" href="#">spin the wheel</button>
+        <button id="buy" class="dropdown-item" type="button" href="#">buy a vowel</button>
+        <div class="dropdown-divider"></div>
+        <button id="solve" class="dropdown-item" type="button" href="#">solve the puzzle!</button>
+      </div>
+    </div>
+
+    <table></table>
+
+<!--dismissable alerts that pop up when a question is answered in/correctly-->
+    <div class="alert alert-success alert-dismissible fade show ans" role="alert">
+      hooray! you got it right!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show ans" role="alert">
+      nope! sorry! try again!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+<!-- -->
+    <nav class="navbar fixed-bottom navbar-outline-light bg-light">
+      <a class="navbar-brand" href="https://github.com/allegraanka">github</a>
+    </nav>
+<!-- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

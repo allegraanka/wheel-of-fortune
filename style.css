@@ -1,0 +1,41 @@
+body {
+  background-color: #15151e;
+}
+
+.container-fluid {
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+h1 {
+  font-size: 4em;
+  color: #f0f0f5;
+  margin: 0 auto;
+  padding: 0.5%;
+  width: 45%;
+}
+
+p {
+  color: #f0f0f5;
+  margin: 0 auto 1% auto;
+  padding: 0.5%;
+  text-transform: uppercase;
+}
+
+.btn-group {
+position: absolute;
+right: 12%;
+margin-top: 1%;
+}
+
+/* dismissible alert window widths, positioning */
+.ans {
+  width: 18%;
+  text-align: center;
+  margin: 1% auto;
+}
+
+.navbar a {
+  font-size: 0.8em;
+}
