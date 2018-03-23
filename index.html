@@ -4,38 +4,92 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>wheel of fortune game</title>
+    <title>they got the mustard out!</title>
   </head>
+
   <body>
-<!-- 100%-width responsive section containing header -->
+<!-- landing home page, start game  -->
     <div class="container-fluid">
-      <header class="heading">
-        <h1> wheel of fortune </h1>
-        <p>be smart, get rich: spin the wheel!</p>
-      </header>
+      <h3 id="nerd-out">how hard can you nerd out on buffy?</h3>
+      <h1 id="category-heading"><span class="goth-font">buffy</span> the vampire <span class="goth-font">slayer</span></h1>
+      <h4 id="trivia-game">trivia game</h4>
     </div>
 
-<!-- make-a-move play drop-down button -->
-    <div class="btn-group">
-      <button class="btn btn-outline-light btn-lg" type="button">
-        make a move!
+      <button id="newGame" class="btn btn-outline-light btn-lg" type="button">
+        start a new game
       </button>
-      <button type="button" class="btn btn-lg btn-outline-light dropdown-toggle dropdown-toggle-split"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
-      <span class="badge badge-light" alt="counter to keep score">score</span>
-      </button>
-      <div class="dropdown-menu">
-        <button id="spin" class="dropdown-item" type="button" href="#">spin the wheel</button>
-        <button id="buy" class="dropdown-item" type="button" href="#">buy a vowel</button>
-        <div class="dropdown-divider"></div>
-        <button id="solve" class="dropdown-item" type="button" href="#">solve the puzzle!</button>
+
+    <div id="mustard" class="container-fluid">
+      <p>(they got the mustard out)</p>
+    </div>
+
+    <div id="card-wrapper" class="hidden-cards">
+      <div id="episodes-card" class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">episodes</h5>
+          <p class="card-text">guess the name of the episode based on a brief synopsis of the episode</p>
+          <a href="#" id="episodes-click" class="card-link">guess episodes</a>
+        </div>
+      </div>
+
+      <div id="characters-card" class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">characters</h5>
+          <p class="card-text">any character in the entire buffyverse is fair game</p>
+          <a href="#" id="characters-click" class="card-link">guess characters</a>
+        </div>
+      </div>
+
+      <div id="misc-card" class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">misc</h5>
+          <p class="card-text">ultimate buffy nerdom, random difficulty level, could be anything</p>
+          <a href="#" id="misc-click" class="card-link">answer misc questions!</a>
+        </div>
       </div>
     </div>
 
-    <table></table>
+<!-- game page -->
+    <button id="quit-round" class="btn btn-outline-light btn-lg" type="button">
+      quit game
+    </button>
 
-<!--dismissable alerts that pop up when a question is answered in/correctly-->
+    <div id="hint-div">
+      hint goes here
+    </div>
+
+    <div id="letters-div">
+      <a id="a">a</a>
+      <a id="b">b</a>
+      <a id="c">c</a>
+      <a id="d">d</a>
+      <a id="e">e</a>
+      <a id="f">f</a>
+      <a id="g">g</a>
+      <a id="h">h</a>
+      <a id="i">i</a>
+      <a id="j">j</a>
+      <a id="k">k</a>
+      <a id="l">l</a>
+      <a id="m">m</a>
+      <a id="n">n</a>
+      <a id="o">o</a>
+      <a id="p">p</a>
+      <a id="q">q</a>
+      <a id="r">r</a>
+      <a id="s">s</a>
+      <a id="t">t</a>
+      <a id="u">u</a>
+      <a id="v">v</a>
+      <a id="w">w</a>
+      <a id="x">x</a>
+      <a id="y">y</a>
+      <a id="z">z</a>
+    </div>
+
+<!--dismissable alerts that pop up when a question is answered in/correctly
     <div class="alert alert-success alert-dismissible fade show ans" role="alert">
       hooray! you got it right!
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -47,14 +101,18 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-    </div>
-<!-- -->
+    </div> -->
+
+<!-- bottom navbar -->
     <nav class="navbar fixed-bottom navbar-outline-light bg-light">
       <a class="navbar-brand" href="https://github.com/allegraanka">github</a>
     </nav>
-<!-- -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- my javascript file -->
+    <script src="scripts.js"></script>
   </body>
+
 </html>
