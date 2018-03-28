@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-color: #141313;
+  color: #e8d5d5;
 }
 
 h1.hidden {
@@ -8,18 +10,45 @@ h1.hidden {
 
 div.hidden-cards {
   display: none;
+  width: 18rem;
+  position: absolute;
+  top: 10%;
+  left: 2%;
 }
 
 #quit-round {
   display: none;
+  position: absolute;
+  top: 74%;
+  right: 2%;
 }
 
-#hint-div {
+#new-q {
   display: none;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+
+#solve {
+  display: none;
+  position: absolute;
+  top: 62%;
+  right: 2%;
+}
+
+#new-cat {
+  display: none;
+  position: absolute;
+  top: 38%;
+  right: 2%;
 }
 
 #letters-div {
   display: none;
+  position: absolute;
+  top: 15%;
+  right: 14%;
 }
 
 .container-fluid {
@@ -29,6 +58,7 @@ div.hidden-cards {
 .goth-font {
   font-family: 'Permanent Marker', cursive;
   font-size: 2em;
+  color: #992a2a;
 }
 
  h3, h4 {
@@ -50,19 +80,66 @@ div.hidden-cards {
 
  h5 {
    font-family: 'Permanent Marker', cursive;
+   color: #992a2a;
+   font-size: 1.8em;
  }
 
- #mustard {
+ #mustardFoot {
    position: absolute;
-   bottom: 7.5%;
+   bottom: 10px;
+   color: #e8d5d5;
+   font-size: 0.8em;
  }
 
- /*#card-wrapper {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
- }*/
+ .mustard {
+   color: #e5b524;
+ }
 
  .card {
    margin: 2%;
+   margin-bottom: 2%;
+   background-color: #e8d5d5;
+   color: #141313;
+   font-weight: 500;
+ }
+
+ .letter-btn {
+   width: 35px;
+   height: 35px;
+   border-radius: 15%;
+   background-color: #e8d5d5;
+   color: #992a2a;
+   box-shadow: 5px 10px 18px #992a2a;
+ }
+
+ #gameBoard {
+   display: none;
+   width: 45%;
+   border: #992a2a;
+ }
+
+ #hint {
+   display: none;
+   width: 20%;
+   border: #e8d5d5;
+ }
+
+ #blanks {
+   display: none;
+   width: 20%;
+   border: #e8d5d5;
+ }
+
+ #answer {
+   display: none;
+   width: 20%;
+   border: #e8d5d5;
+ }
+
+ .footer {
+   position: absolute;
+   bottom: 10px;
+   right: 25px;
+   color: #e8d5d5;
+   font-size: 0.8em;
  }

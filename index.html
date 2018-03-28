@@ -21,8 +21,8 @@
         start a new game
       </button>
 
-    <div id="mustard" class="container-fluid">
-      <p>(they got the mustard out)</p>
+    <div id="mustardFoot" class="container-fluid">
+      <p>&copy 2018 they got the <span class="mustard">mustard</span> out!, inc. all rights reserved.</p>
     </div>
 
     <div id="card-wrapper" class="hidden-cards">
@@ -55,38 +55,55 @@
     <button id="quit-round" class="btn btn-outline-light btn-lg" type="button">
       quit game
     </button>
+    <button id="new-q" class="btn btn-outline-light btn-lg" type="button">
+      new question
+    </button>
+    <button id="solve" class="btn btn-outline-light btn-lg" type="button">
+      solve!
+    </button>
+    <button id="new-cat" class="btn btn-outline-light btn-lg" type="button">
+      bored now. new category!
+    </button>
 
-    <div id="hint-div">
-      hint goes here
+    <div id="gameBoard">
+      <div id="hint">
+        hint goes here
+      </div>
+      <div id="blanks">
+        underscores go here
+      </div>
+      <div id="answer">
+        final answer goes here
+      </div>
     </div>
 
     <div id="letters-div">
-      <a id="a">a</a>
-      <a id="b">b</a>
-      <a id="c">c</a>
-      <a id="d">d</a>
-      <a id="e">e</a>
-      <a id="f">f</a>
-      <a id="g">g</a>
-      <a id="h">h</a>
-      <a id="i">i</a>
-      <a id="j">j</a>
-      <a id="k">k</a>
-      <a id="l">l</a>
-      <a id="m">m</a>
-      <a id="n">n</a>
-      <a id="o">o</a>
-      <a id="p">p</a>
-      <a id="q">q</a>
-      <a id="r">r</a>
-      <a id="s">s</a>
-      <a id="t">t</a>
-      <a id="u">u</a>
-      <a id="v">v</a>
-      <a id="w">w</a>
-      <a id="x">x</a>
-      <a id="y">y</a>
-      <a id="z">z</a>
+      <button id="a" class="letter-btn">a</button>
+      <button id="b" class="letter-btn">b</button>
+      <button id="c" class="letter-btn">c</button>
+      <button id="d" class="letter-btn">d</button>
+      <button id="e" class="letter-btn">e</button>
+      <button id="f" class="letter-btn">f</button>
+      <button id="g" class="letter-btn">g</button>
+      <button id="h" class="letter-btn">h</button>
+      <button id="i" class="letter-btn">i</button>
+      <button id="j" class="letter-btn">j</button>
+      <button id="k" class="letter-btn">k</button>
+      <button id="l" class="letter-btn">l</button>
+      <button id="m" class="letter-btn">m</button>
+      <button id="n" class="letter-btn">n</button>
+      <button id="o" class="letter-btn">o</button>
+      <button id="p" class="letter-btn">p</button>
+      <button id="q" class="letter-btn">q</button>
+      <button id="r" class="letter-btn">r</button>
+      <button id="s" class="letter-btn">s</button>
+      <button id="t" class="letter-btn">t</button>
+      <button id="u" class="letter-btn">u</button>
+      <button id="v" class="letter-btn">v</button>
+      <button id="w" class="letter-btn">w</button>
+      <button id="x" class="letter-btn">x</button>
+      <button id="y" class="letter-btn">y</button>
+      <button id="z" class="letter-btn">z</button>
     </div>
 
 <!--dismissable alerts that pop up when a question is answered in/correctly
@@ -104,9 +121,7 @@
     </div> -->
 
 <!-- bottom navbar -->
-    <nav class="navbar fixed-bottom navbar-outline-light bg-light">
-      <a class="navbar-brand" href="https://github.com/allegraanka">github</a>
-    </nav>
+    <a class="footer" href="https://github.com/allegraanka">github</a>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
